@@ -1,4 +1,5 @@
 rvm:
+  - 1.9.3
   - 2.0.0
   - 2.2.1
   - 2.3.0
@@ -14,14 +15,14 @@ gemfile:
 matrix:
   exclude:
     - rvm: 2.0.0
+      gemfile: gemfiles/capybara_1_1.gemfile
+    - rvm: 2.0.0
       gemfile: gemfiles/rails_3_1.gemfile
     - rvm: 2.0.0
       gemfile: gemfiles/rails_3_0.gemfile
 
     - rvm: 2.2.1
-      gemfile: gemfiles/rails_4_2.gemfile
-    - rvm: 2.2.1
-      gemfile: gemfiles/rails_4_1.gemfile
+      gemfile: gemfiles/capybara_1_1.gemfile
     - rvm: 2.2.1
       gemfile: gemfiles/rails_4_0.gemfile
     - rvm: 2.2.1
@@ -29,19 +30,6 @@ matrix:
     - rvm: 2.2.1
       gemfile: gemfiles/rails_3_1.gemfile
     - rvm: 2.2.1
-      gemfile: gemfiles/rails_3_0.gemfile
-
-    - rvm: 2.3.0
-      gemfile: gemfiles/rails_4_2.gemfile
-    - rvm: 2.3.0
-      gemfile: gemfiles/rails_4_1.gemfile
-    - rvm: 2.3.0
-      gemfile: gemfiles/rails_4_0.gemfile
-    - rvm: 2.3.0
-      gemfile: gemfiles/rails_3_2.gemfile
-    - rvm: 2.3.0
-      gemfile: gemfiles/rails_3_1.gemfile
-    - rvm: 2.3.0
       gemfile: gemfiles/rails_3_0.gemfile
 
 # Needed for selenium browser
