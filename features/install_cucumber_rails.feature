@@ -7,7 +7,6 @@ Feature: Rails
     Given I have created a new Rails app and installed cucumber-rails
     Then the following files should exist:
       | config/cucumber.yml                    |
-      | script/cucumber                        |
       | features/support/env.rb                |
       | features/step_definitions/.gitkeep     |
       | lib/tasks/cucumber.rake                |

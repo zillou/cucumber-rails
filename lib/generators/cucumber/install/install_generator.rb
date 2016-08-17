@@ -13,11 +13,6 @@ module Cucumber
       template 'config/cucumber.yml.erb', 'config/cucumber.yml'
     end
 
-    def create_scripts
-      copy_file 'script/cucumber', 'script/cucumber'
-      chmod     'script/cucumber', 0755
-    end
-
     def create_step_definitions
       empty_directory 'features/step_definitions'
       create_file 'features/step_definitions/.gitkeep'
